@@ -1,0 +1,30 @@
+* {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+}
+
+body {
+	background: rgb(43,43,47);
+	color: rgb(200,200,200);
+	margin: 0;
+	padding: 0;
+}
+
+#header1 {
+	text-align: center;
+}
+
+#dstlist {
+	width: 100vw;
+}
+
+#dstlist button {
+	outline: none;
+	border: none;
+	background-color: rgb(85,85,90);
+	color: rgb(180,180,180);
+	padding: 20px;
+	width: 100%;
+	cursor: pointer;
+	font-size: 30px;
+}
