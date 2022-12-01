@@ -5,6 +5,12 @@
 	},
 	{
 		"ID": 10443,
-		"Logs": []
+		"Logs": [
+			{
+				"Action": "Signout",
+				"Destination": "Cafeteria",
+				"Timestamp": "2022-11-18T18:03:09.684Z"
+			}
+		]
 	}
 ]

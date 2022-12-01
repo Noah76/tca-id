@@ -6,15 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TCA Student Signout</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/arrows.css">
 	<script src="client.js"></script>
 </head>
 <body>
 	<div id="screen1_maincontainer">
-		<h1 id="header1">Please scan your student ID.</h1>
+		<div id="textcontainer1">
+			<h1 class="header1" id="header1">Scan Your Student ID</h1>
+			<p class="subtitle-small">To sign in/out.</p>	
+		</div>
+		<div id="downarrow1">
+			<svg class="arrows">
+				<path class="a1" d="M0 0 L30 32 L60 0"></path>
+				<path class="a2" d="M0 20 L30 52 L60 20"></path>
+				<path class="a3" d="M0 40 L30 72 L60 40"></path>
+			</svg>
+		</div>
 		<input type="number" id="studentid-input" style="opacity: 0;"/>
 	</div>
 	<div id="screen2_maincontainer" hidden>
-		<h1 id="header1">Select your destination.</h1>
+		<h1 class="header1" id="header1">Select your destination.</h1>
 		<table id="dstlist">
 			<tr>
 				<td>
@@ -23,18 +34,28 @@
 			</tr>
 			<tr>
 				<td>
+					<button class="dstBtn">Cafeteria</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
 					<button class="dstBtn">Main Office</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="dstBtn">Other</button>
 				</td>
 			</tr>
 		</table>
 	</div>
 	<div id="signout_success_container" hidden>
-		<h1 id="header1">You have successfully signed out.</h1>
+		<h1 class="header1" id="header1">You have successfully signed out.</h1>
 		<h3>Please scan your ID again when you return.</h3>
 	</div>
 
 	<div id="signin_success_container" hidden>
-		<h1 id="header1">Welcome Back!</h1>
+		<h1 class="header1" id="header1">Welcome Back!</h1>
 		<h3>You have successfully signed in.</h3>
 	</div>
 </body>
